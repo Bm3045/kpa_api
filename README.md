@@ -40,7 +40,11 @@ cd kpa_api_assignment
 
 ### 2. Create and Activate Virtual Environment
 ```bash
-Copy
-Edit
+
 python -m venv venv
 source venv/bin/activate        # On Windows: venv\Scripts\activate
+
+---
+### 3. Install Requirements
+```bash
+pip install -r requirements.txt
