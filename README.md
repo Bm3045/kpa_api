@@ -44,17 +44,20 @@ python -m venv venv
 source venv/bin/activate        # On Windows: venv\Scripts\activate
 
 ---
-	### 3. Install Requirements
+### 3. Install Requirements
 
 pip install -r requirements.txt
 
-###	 4. Set Up PostgreSQL
+### 4. Set Up PostgreSQL
 Create a PostgreSQL database named kpa_db.
 
 Update the .env file at the root level with your credentials:
 
 DATABASE_URL=postgresql://username:password@localhost:5432/kpa_db
-###	5. Run the Server
+
+### 5. Run the Server
 uvicorn app.main:app --reload
 
+---
+Open your browser at: http://127.0.0.1:8000/docs
 
