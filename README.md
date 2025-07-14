@@ -39,12 +39,22 @@ git clone https://github.com/bhavesh/kpa_api_assignment.git
 cd kpa_api_assignment
 
 ### 2. Create and Activate Virtual Environment
-```bash
 
 python -m venv venv
 source venv/bin/activate        # On Windows: venv\Scripts\activate
 
 ---
-### 3. Install Requirements
-```bash
+	### 3. Install Requirements
+
 pip install -r requirements.txt
+
+###	 4. Set Up PostgreSQL
+Create a PostgreSQL database named kpa_db.
+
+Update the .env file at the root level with your credentials:
+
+DATABASE_URL=postgresql://username:password@localhost:5432/kpa_db
+###	5. Run the Server
+uvicorn app.main:app --reload
+
+
