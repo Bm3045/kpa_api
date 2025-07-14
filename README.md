@@ -37,3 +37,10 @@ Based on the Swagger docs: [https://app.swaggerhub.com/apis/sarvasuvidhaen/kpa-f
 ```bash
 git clone https://github.com/bhavesh/kpa_api_assignment.git
 cd kpa_api_assignment
+
+### 2. Create and Activate Virtual Environment
+```bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate        # On Windows: venv\Scripts\activate
