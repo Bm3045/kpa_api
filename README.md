@@ -61,3 +61,29 @@ uvicorn app.main:app --reload
 ---
 Open your browser at: http://127.0.0.1:8000/docs
 
+
+### ✨ Key Features Implemented
+✅ POST /api/formData
+Create and store form submission data with fields: full_name, phone, address.
+
+✅ GET /api/formData
+Retrieve all stored form entries.
+
+🔁 Modular FastAPI structure with routing, models, schemas, and DB config split cleanly.
+
+🔐 Input validation using Pydantic.
+
+⚙️ Environment-based config using .env and python-dotenv.
+
+📜 Auto-generated Swagger docs at /docs.
+
+⚠️ Limitations & Assumptions
+❌ No authentication or login system is implemented.
+
+❌ No pagination or filtering on the GET endpoint (basic list fetch).
+
+✅ Assumes phone field is unique for each form submission.
+
+🧪 Manual testing only (no automated test suite provided).
+
+🔒 Data validation includes required fields and types but not advanced logic.
